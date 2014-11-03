@@ -16,6 +16,11 @@
 		4B09D5701A0783DB00DFF42E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D56F1A0783DB00DFF42E /* UIKit.framework */; };
 		4B09D5721A0783EA00DFF42E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D5711A0783EA00DFF42E /* Foundation.framework */; };
 		4B09D5741A0783F500DFF42E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D5731A0783F500DFF42E /* libsqlite3.dylib */; };
+		4B09D5791A0790CE00DFF42E /* BCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5781A0790CE00DFF42E /* BCTabBarController.m */; };
+		4B09D57D1A0791EA00DFF42E /* BCFavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D57C1A0791EA00DFF42E /* BCFavVC.m */; };
+		4B09D5801A0791F700DFF42E /* BCWantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D57F1A0791F700DFF42E /* BCWantVC.m */; };
+		4B09D5831A07920500DFF42E /* BCGetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5821A07920500DFF42E /* BCGetVC.m */; };
+		4B09D5861A07921200DFF42E /* BCFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5851A07921200DFF42E /* BCFreeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,16 @@
 		4B09D56F1A0783DB00DFF42E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4B09D5711A0783EA00DFF42E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4B09D5731A0783F500DFF42E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4B09D5771A0790CE00DFF42E /* BCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTabBarController.h; sourceTree = "<group>"; };
+		4B09D5781A0790CE00DFF42E /* BCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarController.m; sourceTree = "<group>"; };
+		4B09D57B1A0791EA00DFF42E /* BCFavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFavVC.h; sourceTree = "<group>"; };
+		4B09D57C1A0791EA00DFF42E /* BCFavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFavVC.m; sourceTree = "<group>"; };
+		4B09D57E1A0791F700DFF42E /* BCWantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWantVC.h; sourceTree = "<group>"; };
+		4B09D57F1A0791F700DFF42E /* BCWantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWantVC.m; sourceTree = "<group>"; };
+		4B09D5811A07920500DFF42E /* BCGetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGetVC.h; sourceTree = "<group>"; };
+		4B09D5821A07920500DFF42E /* BCGetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGetVC.m; sourceTree = "<group>"; };
+		4B09D5841A07921200DFF42E /* BCFreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFreeVC.h; sourceTree = "<group>"; };
+		4B09D5851A07921200DFF42E /* BCFreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFreeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +99,7 @@
 				4B09D5401A077CB400DFF42E /* BCAppDelegate.h */,
 				4B09D5411A077CB400DFF42E /* BCAppDelegate.m */,
 				4B09D5491A077CB400DFF42E /* Images.xcassets */,
+				4B09D5871A07921B00DFF42E /* Base */,
 				4B09D5751A0783FC00DFF42E /* Frameworks */,
 				4B09D53C1A077CB400DFF42E /* Supporting Files */,
 			);
@@ -119,6 +135,55 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		4B09D5871A07921B00DFF42E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D5771A0790CE00DFF42E /* BCTabBarController.h */,
+				4B09D5781A0790CE00DFF42E /* BCTabBarController.m */,
+				4B09D5891A07923500DFF42E /* Favorite */,
+				4B09D58A1A07925100DFF42E /* Want */,
+				4B09D58B1A07925700DFF42E /* Get */,
+				4B09D58C1A07925E00DFF42E /* Free */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		4B09D5891A07923500DFF42E /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D57B1A0791EA00DFF42E /* BCFavVC.h */,
+				4B09D57C1A0791EA00DFF42E /* BCFavVC.m */,
+			);
+			name = Favorite;
+			sourceTree = "<group>";
+		};
+		4B09D58A1A07925100DFF42E /* Want */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D57E1A0791F700DFF42E /* BCWantVC.h */,
+				4B09D57F1A0791F700DFF42E /* BCWantVC.m */,
+			);
+			name = Want;
+			sourceTree = "<group>";
+		};
+		4B09D58B1A07925700DFF42E /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D5811A07920500DFF42E /* BCGetVC.h */,
+				4B09D5821A07920500DFF42E /* BCGetVC.m */,
+			);
+			name = Get;
+			sourceTree = "<group>";
+		};
+		4B09D58C1A07925E00DFF42E /* Free */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D5841A07921200DFF42E /* BCFreeVC.h */,
+				4B09D5851A07921200DFF42E /* BCFreeVC.m */,
+			);
+			name = Free;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B09D5801A0791F700DFF42E /* BCWantVC.m in Sources */,
+				4B09D5791A0790CE00DFF42E /* BCTabBarController.m in Sources */,
+				4B09D5831A07920500DFF42E /* BCGetVC.m in Sources */,
 				4B09D5421A077CB400DFF42E /* BCAppDelegate.m in Sources */,
 				4B09D53F1A077CB400DFF42E /* main.m in Sources */,
+				4B09D57D1A0791EA00DFF42E /* BCFavVC.m in Sources */,
+				4B09D5861A07921200DFF42E /* BCFreeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +376,10 @@
 				);
 				INFOPLIST_FILE = BC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -327,6 +401,10 @@
 				);
 				INFOPLIST_FILE = BC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

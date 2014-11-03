@@ -11,4 +11,9 @@
 
 #import <Availability.h>
 #import "ALExtension-Prefix.pch"
+#import "BCFavVC.h"
+#import "BCGetVC.h"
+#import "BCWantVC.h"
+#import "BCFreeVC.h"
+#import "BCTabBarController.h"
 #endif
