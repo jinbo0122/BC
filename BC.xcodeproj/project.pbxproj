@@ -8,17 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		4B09D53F1A077CB400DFF42E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D53E1A077CB400DFF42E /* main.m */; };
-		4B09D5421A077CB400DFF42E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5411A077CB400DFF42E /* AppDelegate.m */; };
+		4B09D5421A077CB400DFF42E /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5411A077CB400DFF42E /* BCAppDelegate.m */; };
 		4B09D54A1A077CB400DFF42E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B09D5491A077CB400DFF42E /* Images.xcassets */; };
+		4B09D56A1A0783A800DFF42E /* libALExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D5671A077F0400DFF42E /* libALExtension.a */; };
+		4B09D56C1A0783CC00DFF42E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D56B1A0783CC00DFF42E /* AssetsLibrary.framework */; };
+		4B09D56E1A0783D300DFF42E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D56D1A0783D300DFF42E /* CoreGraphics.framework */; };
+		4B09D5701A0783DB00DFF42E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D56F1A0783DB00DFF42E /* UIKit.framework */; };
+		4B09D5721A0783EA00DFF42E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D5711A0783EA00DFF42E /* Foundation.framework */; };
+		4B09D5741A0783F500DFF42E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D5731A0783F500DFF42E /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B09D5661A077F0400DFF42E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B09D5621A077F0300DFF42E /* ALExtension.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4BD042A91970117B0074192E;
+			remoteInfo = ALExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4B09D5391A077CB400DFF42E /* BC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B09D53D1A077CB400DFF42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B09D53E1A077CB400DFF42E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4B09D5401A077CB400DFF42E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4B09D5411A077CB400DFF42E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B09D5401A077CB400DFF42E /* BCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAppDelegate.h; sourceTree = "<group>"; };
+		4B09D5411A077CB400DFF42E /* BCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppDelegate.m; sourceTree = "<group>"; };
 		4B09D5491A077CB400DFF42E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B09D5621A077F0300DFF42E /* ALExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ALExtension.xcodeproj; path = ../../ALExtension/ALExtension.xcodeproj; sourceTree = "<group>"; };
+		4B09D5681A077F7100DFF42E /* BC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BC-Prefix.pch"; sourceTree = "<group>"; };
+		4B09D56B1A0783CC00DFF42E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4B09D56D1A0783D300DFF42E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4B09D56F1A0783DB00DFF42E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B09D5711A0783EA00DFF42E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B09D5731A0783F500DFF42E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +49,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B09D5741A0783F500DFF42E /* libsqlite3.dylib in Frameworks */,
+				4B09D5721A0783EA00DFF42E /* Foundation.framework in Frameworks */,
+				4B09D5701A0783DB00DFF42E /* UIKit.framework in Frameworks */,
+				4B09D56E1A0783D300DFF42E /* CoreGraphics.framework in Frameworks */,
+				4B09D56C1A0783CC00DFF42E /* AssetsLibrary.framework in Frameworks */,
+				4B09D56A1A0783A800DFF42E /* libALExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +80,11 @@
 		4B09D53B1A077CB400DFF42E /* BC */ = {
 			isa = PBXGroup;
 			children = (
-				4B09D5401A077CB400DFF42E /* AppDelegate.h */,
-				4B09D5411A077CB400DFF42E /* AppDelegate.m */,
+				4B09D5621A077F0300DFF42E /* ALExtension.xcodeproj */,
+				4B09D5401A077CB400DFF42E /* BCAppDelegate.h */,
+				4B09D5411A077CB400DFF42E /* BCAppDelegate.m */,
 				4B09D5491A077CB400DFF42E /* Images.xcassets */,
+				4B09D5751A0783FC00DFF42E /* Frameworks */,
 				4B09D53C1A077CB400DFF42E /* Supporting Files */,
 			);
 			path = BC;
@@ -62,10 +93,32 @@
 		4B09D53C1A077CB400DFF42E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B09D5681A077F7100DFF42E /* BC-Prefix.pch */,
 				4B09D53D1A077CB400DFF42E /* Info.plist */,
 				4B09D53E1A077CB400DFF42E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B09D5631A077F0300DFF42E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D5671A077F0400DFF42E /* libALExtension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B09D5751A0783FC00DFF42E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B09D5731A0783F500DFF42E /* libsqlite3.dylib */,
+				4B09D5711A0783EA00DFF42E /* Foundation.framework */,
+				4B09D56F1A0783DB00DFF42E /* UIKit.framework */,
+				4B09D56D1A0783D300DFF42E /* CoreGraphics.framework */,
+				4B09D56B1A0783CC00DFF42E /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +147,7 @@
 		4B09D5311A077CB400DFF42E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BC;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Albert Lee";
 				TargetAttributes = {
@@ -113,12 +167,28 @@
 			mainGroup = 4B09D5301A077CB400DFF42E;
 			productRefGroup = 4B09D53A1A077CB400DFF42E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4B09D5631A077F0300DFF42E /* Products */;
+					ProjectRef = 4B09D5621A077F0300DFF42E /* ALExtension.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4B09D5381A077CB400DFF42E /* BC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4B09D5671A077F0400DFF42E /* libALExtension.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libALExtension.a;
+			remoteRef = 4B09D5661A077F0400DFF42E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4B09D5371A077CB400DFF42E /* Resources */ = {
@@ -136,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B09D5421A077CB400DFF42E /* AppDelegate.m in Sources */,
+				4B09D5421A077CB400DFF42E /* BCAppDelegate.m in Sources */,
 				4B09D53F1A077CB400DFF42E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,22 +293,42 @@
 		4B09D55D1A077CB400DFF42E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EXECUTABLE_PREFIX = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BC/BC-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../ALExtension/ALExtension,
+				);
 				INFOPLIST_FILE = BC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		4B09D55E1A077CB400DFF42E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EXECUTABLE_PREFIX = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BC/BC-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../ALExtension/ALExtension,
+				);
 				INFOPLIST_FILE = BC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

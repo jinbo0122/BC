@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Albert Lee. All rights reserved.
 //
 
-#import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "BCAppDelegate.h"
+#import "ALExtension.h"
+@interface BCAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation BCAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

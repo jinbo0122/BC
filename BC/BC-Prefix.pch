@@ -1,0 +1,14 @@
+//
+//  BC-Prefix.pch
+//  BC
+//
+//  Created by Albert Lee on 11/3/14.
+//  Copyright (c) 2014 Albert Lee. All rights reserved.
+//
+
+#ifndef BC_BC_Prefix_pch
+#define BC_BC_Prefix_pch
+
+#import <Availability.h>
+#import "ALExtension-Prefix.pch"
+#endif
