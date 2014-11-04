@@ -10,12 +10,12 @@
 
 @interface BCTabBarController : UITabBarController
 @property(nonatomic, strong)UINavigationController *favNav;
-@property(nonatomic, strong)UINavigationController *getNav;
-@property(nonatomic, strong)UINavigationController *wantNav;
-@property(nonatomic, strong)UINavigationController *freeNav;
+@property(nonatomic, strong)UINavigationController *exploreNav;
+@property(nonatomic, strong)UINavigationController *purchasedNav;
+@property(nonatomic, strong)UINavigationController *wishListNav;
 @property(nonatomic, strong)BCFavVC                *favVC;
-@property(nonatomic, strong)BCGetVC                *getVC;
-@property(nonatomic, strong)BCFreeVC               *freeVC;
-@property(nonatomic, strong)BCWantVC               *wantVC;
+@property(nonatomic, strong)BCPurchasedVC          *purchasedVC;
+@property(nonatomic, strong)BCExploreVC            *exploreVC;
+@property(nonatomic, strong)BCWishListVC           *wishListVC;
 
 @end

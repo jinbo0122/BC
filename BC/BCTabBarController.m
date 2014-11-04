@@ -22,20 +22,30 @@
   [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRGBHex:0xed285b]];
   [[UITabBar appearance] setBarTintColor:[UIColor colorWithRGBHex:0xed285b]];
   [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+  
+  
   self.favVC   = [[BCFavVC alloc] init];
   self.favNav  = [[UINavigationController alloc] initWithRootViewController:self.favVC];
-  self.getVC   = [[BCGetVC alloc] init];
-  self.getNav  = [[UINavigationController alloc] initWithRootViewController:self.getVC];
-  self.wantVC  = [[BCWantVC alloc] init];
-  self.wantNav = [[UINavigationController alloc] initWithRootViewController:self.wantVC];
-  self.freeVC  = [[BCFreeVC alloc] init];
-  self.freeNav = [[UINavigationController alloc] initWithRootViewController:self.freeVC];
+  self.purchasedVC   = [[BCPurchasedVC alloc] init];
+  self.purchasedNav  = [[UINavigationController alloc] initWithRootViewController:self.purchasedVC];
+  self.wishListVC  = [[BCWishListVC alloc] init];
+  self.wishListNav = [[UINavigationController alloc] initWithRootViewController:self.wishListVC];
+  self.exploreVC  = [[BCExploreVC alloc] init];
+  self.exploreNav = [[UINavigationController alloc] initWithRootViewController:self.exploreVC];
+  self.viewControllers = @[self.favNav,self.exploreNav,self.wishListNav,self.purchasedNav];
   
-  self.viewControllers = @[self.favNav,self.getNav,self.wantNav,self.freeNav];
+  
+  
   self.favNav.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
-  self.getNav.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:1];
-  self.wantNav.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:2];
-  self.freeNav.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:3];
+  self.exploreNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Explore"
+                                                             image:[UIImage imageNamed:@"icon_nav_explore"]
+                                                               tag:1];
+  self.wishListNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Wish List"
+                                                              image:[UIImage imageNamed:@"icon_nav_purchased"]
+                                                                tag:2];
+  self.purchasedNav.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Purchased"
+                                                         image:[UIImage imageNamed:@"icon_nav_purchased"]
+                                                           tag:3];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,23 +1,23 @@
 //
-//  BCFreeVC.m
+//  BCWantVC.m
 //  BC
 //
 //  Created by Albert Lee on 11/3/14.
 //  Copyright (c) 2014 Albert Lee. All rights reserved.
 //
 
-#import "BCFreeVC.h"
+#import "BCWishListVC.h"
 
-@interface BCFreeVC ()
+@interface BCWishListVC ()
 
 @end
 
-@implementation BCFreeVC
+@implementation BCWishListVC
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
-  self.navigationItem.titleView = [UILabel titleLabel:@"免费" color:[UIColor whiteColor]];
+  self.navigationItem.titleView = [UILabel titleLabel:@"Wish List" color:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
-  self.navigationItem.titleView = [UILabel titleLabel:@"最爱" color:[UIColor whiteColor]];
+  self.navigationItem.titleView = [UILabel titleLabel:@"Favorite" color:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {

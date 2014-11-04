@@ -1,5 +1,5 @@
 //
-//  BCGetVC.h
+//  BCWantVC.h
 //  BC
 //
 //  Created by Albert Lee on 11/3/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BCGetVC : UIViewController
+@interface BCWishListVC : UIViewController
 
 @end

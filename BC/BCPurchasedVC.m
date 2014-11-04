@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Albert Lee. All rights reserved.
 //
 
-#import "BCGetVC.h"
+#import "BCPurchasedVC.h"
 
-@interface BCGetVC ()
+@interface BCPurchasedVC ()
 
 @end
 
-@implementation BCGetVC
+@implementation BCPurchasedVC
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
-  self.navigationItem.titleView = [UILabel titleLabel:@"已购" color:[UIColor whiteColor]];
+  self.navigationItem.titleView = [UILabel titleLabel:@"Purchased" color:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {

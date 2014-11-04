@@ -18,9 +18,9 @@
 		4B09D5741A0783F500DFF42E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B09D5731A0783F500DFF42E /* libsqlite3.dylib */; };
 		4B09D5791A0790CE00DFF42E /* BCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5781A0790CE00DFF42E /* BCTabBarController.m */; };
 		4B09D57D1A0791EA00DFF42E /* BCFavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D57C1A0791EA00DFF42E /* BCFavVC.m */; };
-		4B09D5801A0791F700DFF42E /* BCWantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D57F1A0791F700DFF42E /* BCWantVC.m */; };
-		4B09D5831A07920500DFF42E /* BCGetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5821A07920500DFF42E /* BCGetVC.m */; };
-		4B09D5861A07921200DFF42E /* BCFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5851A07921200DFF42E /* BCFreeVC.m */; };
+		4B09D5801A0791F700DFF42E /* BCWishListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D57F1A0791F700DFF42E /* BCWishListVC.m */; };
+		4B09D5831A07920500DFF42E /* BCPurchasedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5821A07920500DFF42E /* BCPurchasedVC.m */; };
+		4B09D5861A07921200DFF42E /* BCExploreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B09D5851A07921200DFF42E /* BCExploreVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +51,12 @@
 		4B09D5781A0790CE00DFF42E /* BCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTabBarController.m; sourceTree = "<group>"; };
 		4B09D57B1A0791EA00DFF42E /* BCFavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFavVC.h; sourceTree = "<group>"; };
 		4B09D57C1A0791EA00DFF42E /* BCFavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFavVC.m; sourceTree = "<group>"; };
-		4B09D57E1A0791F700DFF42E /* BCWantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWantVC.h; sourceTree = "<group>"; };
-		4B09D57F1A0791F700DFF42E /* BCWantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWantVC.m; sourceTree = "<group>"; };
-		4B09D5811A07920500DFF42E /* BCGetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGetVC.h; sourceTree = "<group>"; };
-		4B09D5821A07920500DFF42E /* BCGetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGetVC.m; sourceTree = "<group>"; };
-		4B09D5841A07921200DFF42E /* BCFreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCFreeVC.h; sourceTree = "<group>"; };
-		4B09D5851A07921200DFF42E /* BCFreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCFreeVC.m; sourceTree = "<group>"; };
+		4B09D57E1A0791F700DFF42E /* BCWishListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWishListVC.h; sourceTree = "<group>"; };
+		4B09D57F1A0791F700DFF42E /* BCWishListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWishListVC.m; sourceTree = "<group>"; };
+		4B09D5811A07920500DFF42E /* BCPurchasedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPurchasedVC.h; sourceTree = "<group>"; };
+		4B09D5821A07920500DFF42E /* BCPurchasedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPurchasedVC.m; sourceTree = "<group>"; };
+		4B09D5841A07921200DFF42E /* BCExploreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCExploreVC.h; sourceTree = "<group>"; };
+		4B09D5851A07921200DFF42E /* BCExploreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCExploreVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +143,9 @@
 				4B09D5771A0790CE00DFF42E /* BCTabBarController.h */,
 				4B09D5781A0790CE00DFF42E /* BCTabBarController.m */,
 				4B09D5891A07923500DFF42E /* Favorite */,
-				4B09D58A1A07925100DFF42E /* Want */,
-				4B09D58B1A07925700DFF42E /* Get */,
-				4B09D58C1A07925E00DFF42E /* Free */,
+				4B09D58A1A07925100DFF42E /* WishList */,
+				4B09D58B1A07925700DFF42E /* Purchased */,
+				4B09D58C1A07925E00DFF42E /* Explore */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -159,31 +159,31 @@
 			name = Favorite;
 			sourceTree = "<group>";
 		};
-		4B09D58A1A07925100DFF42E /* Want */ = {
+		4B09D58A1A07925100DFF42E /* WishList */ = {
 			isa = PBXGroup;
 			children = (
-				4B09D57E1A0791F700DFF42E /* BCWantVC.h */,
-				4B09D57F1A0791F700DFF42E /* BCWantVC.m */,
+				4B09D57E1A0791F700DFF42E /* BCWishListVC.h */,
+				4B09D57F1A0791F700DFF42E /* BCWishListVC.m */,
 			);
-			name = Want;
+			name = WishList;
 			sourceTree = "<group>";
 		};
-		4B09D58B1A07925700DFF42E /* Get */ = {
+		4B09D58B1A07925700DFF42E /* Purchased */ = {
 			isa = PBXGroup;
 			children = (
-				4B09D5811A07920500DFF42E /* BCGetVC.h */,
-				4B09D5821A07920500DFF42E /* BCGetVC.m */,
+				4B09D5811A07920500DFF42E /* BCPurchasedVC.h */,
+				4B09D5821A07920500DFF42E /* BCPurchasedVC.m */,
 			);
-			name = Get;
+			name = Purchased;
 			sourceTree = "<group>";
 		};
-		4B09D58C1A07925E00DFF42E /* Free */ = {
+		4B09D58C1A07925E00DFF42E /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				4B09D5841A07921200DFF42E /* BCFreeVC.h */,
-				4B09D5851A07921200DFF42E /* BCFreeVC.m */,
+				4B09D5841A07921200DFF42E /* BCExploreVC.h */,
+				4B09D5851A07921200DFF42E /* BCExploreVC.m */,
 			);
-			name = Free;
+			name = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,13 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B09D5801A0791F700DFF42E /* BCWantVC.m in Sources */,
+				4B09D5801A0791F700DFF42E /* BCWishListVC.m in Sources */,
 				4B09D5791A0790CE00DFF42E /* BCTabBarController.m in Sources */,
-				4B09D5831A07920500DFF42E /* BCGetVC.m in Sources */,
+				4B09D5831A07920500DFF42E /* BCPurchasedVC.m in Sources */,
 				4B09D5421A077CB400DFF42E /* BCAppDelegate.m in Sources */,
 				4B09D53F1A077CB400DFF42E /* main.m in Sources */,
 				4B09D57D1A0791EA00DFF42E /* BCFavVC.m in Sources */,
-				4B09D5861A07921200DFF42E /* BCFreeVC.m in Sources */,
+				4B09D5861A07921200DFF42E /* BCExploreVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +366,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Wang (N3DB4XRY52)";
 				EXECUTABLE_PREFIX = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BC/BC-Prefix.pch";
@@ -391,6 +392,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lei Wang (N3DB4XRY52)";
 				EXECUTABLE_PREFIX = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BC/BC-Prefix.pch";
@@ -429,6 +431,7 @@
 				4B09D55E1A077CB400DFF42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

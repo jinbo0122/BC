@@ -1,5 +1,5 @@
 //
-//  BCFreeVC.h
+//  BCExploreVC.h
 //  BC
 //
 //  Created by Albert Lee on 11/3/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BCFreeVC : UIViewController
+@interface BCExploreVC : UIViewController
 
 @end
